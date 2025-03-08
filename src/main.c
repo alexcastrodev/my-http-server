@@ -80,10 +80,15 @@ int main() {
 	
 	// Accept cria um novo socket para cada requisição
 	// e preenche com o detalhe do cliente
-	accept(server_fd, (struct sockaddr *) &client_addr, &client_addr_len);
+	int new_socket = accept(server_fd, (struct sockaddr *) &client_addr, &client_addr_len);
 	
 	printf("Client connected\n");
-	
+
+	// Agora eu tenho que retornar codigo 200 pro socket
+	// baseado do `man send`, send(int socket, const void *buffer, size_t length, int flags);
+	char *response = "HTTP/1.1 200 OK\r\n\r\n";
+	send(new_socket, response, strlen(response), 0);	
+
 	// fecha a conexão
 	close(server_fd);
 
