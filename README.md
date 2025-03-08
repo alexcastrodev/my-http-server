@@ -3,7 +3,7 @@
 Status atual
 
 ```bash
-➜  codecrafters-http-server-c git:(master) ✗ ./your_program.sh
+➜  http-server-c git:(master) ✗ ./your_program.sh
 -- Configuring done (0.0s)
 -- Generating done (0.0s)
 -- Build files have been written to: /build
