@@ -6,7 +6,7 @@ Status atual
 ➜  codecrafters-http-server-c git:(master) ✗ ./your_program.sh
 -- Configuring done (0.0s)
 -- Generating done (0.0s)
--- Build files have been written to: /Users/alexcastrodev/study/codecrafters-http-server-c/build
+-- Build files have been written to: /build
 [ 50%] Building C object CMakeFiles/http-server.dir/src/main.c.o
 [100%] Linking C executable http-server
 [100%] Built target http-server
